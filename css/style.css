@@ -90,7 +90,7 @@ section.oursurvice{height:427px; width:100%;  position:relative; background:#fff
 section.aboutetra{height:480px; width:100%;  position:relative; background-image: url('/img/aoubtetra_bg.png'); background-position:center;}
 section.contact{height:600px; width:100%;  position:relative; background-image: url('/img/contact_bg.png'); background-position:center;} 
 section.map{height:456px; width:100%;  position:relative; background-image: url('../img/map_bg.png'); background-position:center; }
-footer{clear:both; height:70px; width:100%; background-color:#e8e8e8; position:relative}
+footer{clear:both; height:70px; width:100%; background-color:#000c1e; position:relative}
 
 /*header*/
 header.header_main div.main_header{width:1200px; position: relative; margin: auto; }
@@ -438,8 +438,8 @@ article.subarticle div.substyle2{border:0px solid red; float:right; padding-righ
 .substyle_layout{padding-top:100px; width:50%; float:right; }
 .subtext_title{font-size:16px; font-weight:bold; padding-bottom:10px; padding-top:10px;}
 .subtext_contents{color:#333333; line-height:23px; font-size:14px;}
-.contents01_layout{border:0px solid red; height:620px; margin:auto;}
-.contents02_layout{border:0px solid red; height:400px; margin:auto;}
+.contents01_layout{border:0px solid red; height:560px; margin:auto; padding-bottom:50px;}
+.contents02_layout{border:0px solid red; height:400px; margin:auto; padding-bottom:50px;}
 article.subarticle div.transnet_img {float:left; padding-bottom:40px; padding-top:50px; border:0px solid red;}
 .bcheck_p_img {float:left; padding-bottom:0px; height:100%;}
 .bcheck_p_img img{float:left; padding-left:60px; padding-bottom:40px; border:0px solid red; padding-top:50px;}
@@ -453,7 +453,7 @@ article.subarticle3{width:100%; position: relative; padding-top:50px; vertical-a
 height:100%;}
 .contents2_bgbox{background:url("/img/contents2_box.png") no-repeat; width:280px; height:280px; display:inline-block; top;}
 
-.bcheck_pointbox{width:900px; margin:auto; border:0px solid red; text-align:center; padding-top:30px; }
+.bcheck_pointbox{width:900px; margin:auto; border:0px solid red; text-align:center; padding-top:50px; }
 .bcheck_textbox{padding-top:130px; border:0px solid red;}
 .bcheck_text1{font-size:16px; font-weight:bold; color:#032458; padding-bottom:10px;}
 .bcheck_phone img{display:inline-block;}
@@ -469,9 +469,9 @@ height:100%;}
 .psystem_contents_text{font-size:14px; line-height:27px;}
 .bchk_icon2{border:0px solid red; padding-top:0px; margin:auto; text-align:center; padding-top:30px;}
 .manual_bt{border:1px solid #4172c4; width:170px; font-size:14px; border-radius:20px; padding-top:10px; padding-bottom:10px; text-align:right; display:inline-block;
-padding-right:30px;}
+padding-right:30px; font-weight:bold;}
 .manual_bt2{margin-right:5px; border:1px solid #4172c4; width:140px; font-size:14px; border-radius:20px; padding-top:10px; padding-bottom:10px; text-align:right; display:inline-block;
-padding-right:30px;}
+padding-right:30px; font-weight:bold;}
 .contact_bt{background:#5299f7; color:#fff; width:170px; font-size:14px; border-radius:25px; padding-top:15px; padding-bottom:15px; text-align:center;
 margin:auto; margin-top:40px;}
 .manual_bt img{padding-right:10px;}
@@ -529,7 +529,7 @@ margin:auto; margin-top:40px;}
 .workflow_benefit{width:25%; text-align:center; display:inline-block; background:#fff; height:310px; margin-right:10px; padding-top:30px;
 }
 
-.blockchain_benefit{width:700px; margin:auto; text-align:center; padding-top:30px;}
+.blockchain_benefit{width:700px; margin:auto; text-align:center; padding-top:0px;}
 .blockchain_benefit2{width:30%; text-align:center; display:inline-block;}
 .bc_benefit_text1{font-size:20px; font-weight:bold; padding-bottom:10px; padding-top:10px;}
 
@@ -563,7 +563,7 @@ ul.trans_menu1{margin-top:10px;}
 	.blockchain4_box{width:100%; height:100%; position: relative; margin:auto; background-image:url('../img/blockchain_sub3.png'); background-position:center;}
 	.blockchain4_text{text-align:center; font-size:28px; padding-top:50px; color:#032458; font-weight:bold;}
 	.blockchain4_text span{color:#de2d47;}
-	.blockchain4_text2{font-size:14px; text-align:center; padding-top:5px; color:#545454;}
+	.blockchain4_text2{font-size:14px; text-align:center; padding-top:5px; color:#545454; font-weight:bold;}
 
 	.pops_up { 
 		background-color:#fff;
@@ -674,7 +674,7 @@ ul.trans_menu1{margin-top:10px;}
 
 
 
-	footer{clear:both; height:90px; width:100%; background-color:#e8e8e8; position:relative;}
+	footer{clear:both; height:90px; width:100%; background-color:#000c1e; position:relative;}
 	div.footer_box {width:100%; height:90px; position:relative; margin: auto;}
 	div.footer_logo {display:none;}/* {padding-top:35px; padding-left:20px;}*/
 	div.footer_text {clear:both; text-align:left; line-height:25px; padding-top:20px; font-size:14px; padding-left:20px;}

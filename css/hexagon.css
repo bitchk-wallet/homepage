@@ -1,0 +1,90 @@
+/*육각형*/
+.menu-container {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.hex-wrapper {
+  display: inline-block;
+}
+.hex-row {
+  clear: left;
+}
+.shift {
+    margin-left: 33px;
+}
+.hexagon {
+  float: left;
+  position: relative;
+  margin: 10px 2px;
+  width: 63px;
+  height: 37px;
+  background-color: #ffffff;
+  background-position: center center;
+  z-index: 1;
+  /* Text styling */
+  line-height: 37px;
+  text-align: center;
+  font-size: 1em;
+  font-weight: bold;
+  color: #000;
+  color: rgba(0, 0, 0, .5);
+  cursor: pointer;
+  transition: color 500ms ease, text-shadow 500ms ease, background-color 500ms ease, -webkit-transform 1s ease-in-out;
+}
+.hexagon:hover {
+  color: #EDEE3E;
+  background-color: #33ABA9;
+}
+.hexagon_focus {
+  color: #EDEE3E;
+  background-color: #33ABA9;
+}
+.hexagon .face1,
+.hexagon .face2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: inherit;
+  z-index: -1;
+  /* Keeps borders smooth in webkit */
+  backface-visibility: hidden;
+}
+.hexagon .face1:before,
+.hexagon .face2:before {
+  content: '';
+  position: absolute;
+  width: 74px;
+  height: 74px;
+  background: inherit;
+}
+.hexagon .face1 { transform: rotate(60deg); }
+.hexagon .face1:before {
+  left: 0;
+  transform-origin: left top;
+  transform: rotate(-60deg) translate(-37px, 0);
+	-moz-transform: rotate(-60deg);
+	-ms-transform: rotate(-60deg);
+	-o-transform: rotate(-60deg);
+	-webkit-transform: rotate(-60deg);
+}
+.hexagon .face2 { 
+	transform: rotate(-60deg); 
+	-moz-transform: rotate(-60deg);
+	-ms-transform: rotate(-60deg);
+	-o-transform: rotate(-60deg);
+	-webkit-transform: rotate(-60deg);
+}
+.hexagon .face2:before {
+  right: 0;
+  transform-origin: right top;
+  transform: rotate(60deg) translate(37px, 0);
+	-moz-transform: rotate(60deg);
+	-ms-transform: rotate(60deg);
+	-o-transform: rotate(60deg);
+	-webkit-transform: rotate(60deg);
+}
+

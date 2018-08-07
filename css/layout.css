@@ -1,0 +1,152 @@
+@font-face {
+    font-family: 'OpenSans-Regular';
+    src: url('/font/OpenSans-Regular.ttf');
+    src: url('/font/OpenSans-Regular.woff') format('woff'),
+         url('/font/OpenSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+            /*리셋*/
+            *{margin: 0; padding: 0;}
+            li{list-style:none;}
+			a{text-decoration:none;}
+			
+            body{font-family:OpenSans-Regular, sans-serif;}
+            /*리셋*/
+
+			 /*네비게이션*/
+			nav.mobile_depth1 {position:absolute; top:0px; right:0;width:180px; height:100%; margin-left:-180px; background:url("../img/bg_mobile_nav.jpg") 0 0 repeat-y; background-size:180px 47px; }
+			nav.mobile_depth1 ul.depth1{padding-top:30px;}
+			nav.mobile_depth1 ul.depth1 a {display:block; padding:9px 11px; background:url("../img/bg_mnav_depth1.jpg") 0 0 repeat-x; background-size:15px 35px; color:#fff; font-size:12px;}
+			nav.mobile_depth1 ul.depth1 a.cnt {font-weight:bold; background:url("../img/bg_mnav_depth1_on.jpg") 0 0 repeat-x; }
+			nav.mobile_depth1 span.menu_txt {display:block; background:url("../img/ico_plmn.png") right 1px no-repeat; width:90%;}
+			nav.mobile_depth1 ul.depth1 a.cnt span.menu_txt {background-position:right -13px;}
+			nav.mobile_depth1 ul.depth2 {display:none;}
+			nav.mobile_depth1 ul.depth2 a {display:block; padding:9px 13px; background:url("../img/bg_mnav_depth2.jpg") 0 0 repeat-x; background-size:15px 35px; color:#24314b; font-size:11px;}
+			nav.mobile_depth1 ul.depth2 a.cnt {font-weight:normal; background:#fff; }
+			nav.mobile_depth1 ul.depth2 a.cnt3 {font-weight:bold; background:#fff; }
+			nav.mobile_depth1 ul.depth2 a span.menu_txt {display:block; background:url("../img/ico_plmn2.png") right 1px no-repeat; width:90%;}
+			nav.mobile_depth1 ul.depth2 a.cnt span.menu_txt {background-position:right -13px;}
+			nav.mobile_depth1 ul.depth3 {display:none;}
+			nav.mobile_depth1 ul.depth3 a {display:block; background:#fff;}
+			nav.mobile_depth1 ul.depth3 a span.menu_txt {display:block; background:url("../img/ico_plmn2.png") right 1px no-repeat; width:90%;}
+			nav{display:none; }
+			nav.mobile_depth1 {display:none;}
+			.btn_nav{display:none;}
+			
+			#wrapper{position:absolute; width:100%; padding:0%; min-width:320px;}
+            
+            ul#menu li{color: white; float: left; padding-left:20px;}
+           
+			header{position: fixed; top:0; left:0; width:100%; z-index:1; height:100px;}
+            header div#header{width:1200px; position: relative; margin:auto; border:0px solid red;}
+            #menu{position: absolute;top:35px; right:0px;}
+            #logo{padding-top:30px;}
+        
+			#sub0{width:100%; height:600px; background:rgba(0,0,0,0.4)url('../images/test.png');}
+			#main_text{text-align: center; padding-top:180px;}
+            #main_subtext1{text-align: center; color: white; padding-top:50px; font-size:23px; padding-bottom:10px;}
+            #main_subtext2{text-align: center; color:#afafaf;}
+			div#lording{position:absolute; top:0; left:0; width:100%; height:600px;  background:rgba(0,0,10,0.6) url('../img/web_video_img.png');  background-size: cover;  text-align:center; vertical-align:middle;}
+
+
+            #sub1{width:100%; height:600px; position:relative; margin:auto; border:0px solid red; background-image:url('/img/bg_2.png')}
+            #sub1_bg{width:1200px; height:600px; position: relative; margin: auto; border:0px solid red;}
+			.slidess1{width:100%; height:600px;  border:0px solid red; position: relative; }
+            .title1{padding-top:150px; padding-left:70px;}
+            .text1{padding-top:25px; line-height:150%; color:#595959; width:500px;  padding-left:70px;}
+            .text2{font-size:18px; padding-top: 20px; line-height:150%; width:500px; padding-left:70px; }
+            .img1{position:absolute; right:70px; top:50px;}
+            
+            #sub2{width:100%; height:920px; position:relative; margin:auto; border:0px solid red; background-color:white;}
+            #sub2_bg{width:1200px; height:920px; position: relative; margin: auto; border:0px solid red;}
+            #title2{text-align: center; padding-top: 60px;}
+            #text3{text-align: center; padding-top: 20px; line-height: 150%; font-size: 18px;}
+            #homepage{width:1200px; height:373px; text-align: center; padding-top: 50px;}
+            ul#homepage_icon li{float: left; padding-left:30px; text-align: center; padding-top: 60px; padding-right: 30px;}
+            #icon{width: 727px; height: 295px; position: relative; border:px solid red; margin: auto;}
+            #text4{padding-top: 20px;}
+            
+            
+            #sub3{width:100%; height:300px; position: relative; margin: auto; border:0px solid red; background-image: url('/img/banner_bg.png')}
+            #sub3_bg{width:1200px; height:300px; position:relative; border:0px solid red; margin: auto; text-align: center;}
+            #sub3_text1{padding-top:90px; color:white; font-size:22px;}
+            #text5{padding-top:7px; color:gainsboro; font-size:16px; }
+            #button{padding-top: 25px;}
+            
+            #sub4{width: 100%; height:600px; position: relative; margin: auto; border:0px solid red; background-image: url('/img/bg_4.png')}
+            #sub4_bg{width:1200px; height:600px; position: relative; margin: auto; border:0px solid red;}
+            #hybrid{position: absolute;padding-top: 35px; padding-left: 750px;}
+            #hybrid_text{padding-left: 230px; padding-top: 110px;}
+            #hybrid_text2{padding-left:210px; padding-top: 20px; line-height: 150%; font-size: 18px; padding-bottom: 6px;}
+            #hybrid_text3{padding-left:225px; padding-top: 0px; line-height: 100%; font-size: 18px; padding-bottom: 40px;}
+
+            #box1{width:135px; height:135px; background-color: #2a56a0; text-align: center; margin-left: 60px; float: left;}
+            #hybrid_box1{color: white; text-align: center; font-size:16px; padding-top: 50px;}
+            #box2{width:135px; height:135px; background-color: #3c6dbe; margin-left: 15px; float: left;}
+            #hybrid_box2{color: white; text-align: center; font-size:16px; padding-top: 50px;}
+            #box3{width:135px; height:135px; background-color: #5080d0; margin-left: 15px; float: left;}
+            #hybrid_box3{color: white; text-align: center; font-size:16px; padding-top: 50px;}
+            #box4{width:135px; height:135px; background-color: #6995df; margin-left: 15px; float: left;}
+            #hybrid_box4{color: white; text-align: center; font-size:16px; padding-top: 50px;}
+            
+            #sub5{width:100%;  background-color:white; }
+            #sub5_bg{width: 1200px;  position: relative; margin: auto; border:0px solid red;}
+            #project{text-align: center; padding-top: 60px;}
+            #project_text{text-align: center; padding-top: 10px; color: #8f8f8f;}
+            ul#project_img li{float: left; padding-left: 20px; text-align: center; padding-top: 60px;}
+			ul#project_img li.mag{margin-bottom:50px;}
+            
+            #sub6{ clear:both;width:100%; height:600px; position: relative; margin: auto; border:0px solid red; background-color: #f6f6f6;}
+            #sub6_bg{width:1200px; height:600px; position: relative; margin: auto; border:0px solid red;}
+            #process_title{text-align: center; padding-top: 50px;}
+            #process_text{text-align: center; padding-top: 20px; padding-bottom: 30px; color: #818181;}
+            ul#process li{width:398px; height:180px; background-color: white; float: left; text-align: center; }
+			div.process_back{height:180px;}
+			.process_img1{padding-top:30px;}
+			.process_text1{padding-top: 10px; line-height: 150%; color: #939393;}
+
+			.process_line1{border-top:1px solid #bebebe; border-bottom:1px solid #bebebe; border-right:1px solid #bebebe; border-left:1px solid #bebebe;}
+			.process_line2{border-top:1px solid #bebebe;}
+			.process_line3{border-top:1px solid #bebebe; border-bottom:1px solid #bebebe;}
+            
+            #sub7{width:100%; height:660px; position: relative; margin: auto; border: 0px solid red; background-image: url('/img/contact_bg.png')}
+            #sub7_bg{width: 1200px; height: 660px; position: relative; margin: auto; border:0px solid red;}
+            
+           
+            
+            ul#contact_box{border: 1200px; height: 600px; position: relative; margin: auto; border: 0px solid red;
+            text-align: center; padding-bottom: 20px; padding-top:50px;}
+            
+            .int{width: 500px; height: 50px; border: 0px; padding-left: 20px; padding-bottom: 0px; margin-bottom: 20px;  border-radius:5px;}
+            .inttx{width: 500px; height: 150px; border: 0px; padding-left: 20px; padding-bottom: 0px; margin-bottom: 20px; border-radius:5px; padding-top: 15px;}
+            #contact_top5_title{text-align: center; padding-top: 60px; font-size: 30px;}
+            .btns1{border: 1px solid black; padding: 10px 30px; color:black; border-radius:5px; text-decoration: none; }
+			#contact_top5_btn a {color:#000000;} 
+			#contact_top5_btn a:visited {color:#000000;} 
+			#contact_top5_btn a:active {color:#000000;} 
+			#contact_top5_btn a:hover {color:#000000;} 
+            #contact_top5_btn{padding-top: 20px;}
+            
+             #footer{width: 100%; height: 200px; background-color: black; position: relative; margin: auto;}
+        #footsub{width:1200px; height:200px; border:0px solid red; position:relative;margin:auto;}
+        .t1{color:white; position:absolute; left:80px; top:50px; text-align: left;}
+        .t2{color:white; position:absolute; left:370px; top:50px; text-align: left;}
+        .t3{color:white; position:absolute; left:670px; top:50px; text-align: left;}
+        .t4{color:white; position:absolute; left:1000px; top:50px; text-align: left;}
+        #footlogo{position: absolute; top:50px;}
+        #cop{width:100%; height:40px; background-color: black; color: white;
+        text-align: center; border-top:1px solid gray; padding-top:15px;}
+         .footsubtit{margin-bottom:10px;}
+        .footsubtit1{margin-bottom:25px;}
+         .t1 p{height:30px;}
+         .t2 p{height:30px;}
+         .t3 p{height:40px;}
+         .t4 p{height:30px;}
+		 .footsubcot a{color:#ffffff;}
+         #t4_text a{color:#1cc1ff;}
+
+		
+       
+       
+        

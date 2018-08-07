@@ -1,0 +1,491 @@
+<?
+$url = strtoupper($_SERVER['HTTP_HOST']); 
+if($url=="HEARTTOK.ETRA.KR") {
+    //echo $url; 
+  //header('Location: HeartTok.html'); 
+  header('Location: http://www.etra.kr/HeartTok.html'); 
+  exit();	
+}
+?>
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+      <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+      <title>ETRA WORK</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <meta name="naver-site-verification" content="939f82a91a3b1decf09b16e1b001ebbc76be6e74"/>
+  <meta name="naver-site-verification" content="939f82a91a3b1decf09b16e1b001ebbc76be6e74"/>
+  <meta name="google-site-verification" content="lucEM1gNvw_AGPwTUFkTdUvYLUcdPItd8a2E_AeH7Ho" />
+      <meta name='description' content='코인지갑,월렛개발,코인월렛,트랜스넷,포인트시스템,워크웨어,블록체인,포인트개발,포인트카드개발,코인시스템,코인거래소,코인개발,번역업무시스템,하트톡'>	
+      <meta property='og:title' content='(주)이트라'>	
+      <meta property='og:description' content='코인지갑,월렛개발,코인월렛,트랜스넷,포인트시스템,워크웨어,블록체인,포인트개발,포인트카드개발,코인시스템,코인거래소,코인개발,번역업무시스템,하트톡'>	
+      <meta property='og:image' content='http://work.etra.kr/images/mini_logo.png'>
+      <meta property='og:image:width' content='200' />
+      <meta property='og:image:height' content='64' />
+      <meta property='og:url' content='http://work.etra.kr/index.html'>
+      <meta name='twitter:card' content='summary'>	
+      <meta name='twitter:title' content='(주)이트라'>	
+      <meta name='twitter:description' content='트랜스넷,포인트시스템,워크웨어,블록체인,포인트개발,포인트카드개발,코인시스템,코인거래소,코인개발,번역업무시스템,하트톡'>	
+      <meta name='twitter:image' content='http://work.etra.com/images/mini_logo.png'>	
+      <meta name='twitter:domain' content='(주)이트라'>	
+  <link rel="canonical" href="http://etra.kr">
+
+  <link rel='shortcut icon' href='http://work.etra.kr/images/favicon.ico' type='image/x-icon' />
+
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/media.css" />
+  <script type='text/javascript' src='../js/jquery.bpopup.min.js'></script>
+</head>
+
+
+
+<body>
+<? include_once "analystic.html"; //구글통계 ?>
+<? include_once "nav2.html"; //서브페이아웃 ?>
+
+
+<script type="text/javascript">
+var toggleOn=true;
+var navSlideOn=true;
+var shopSort=1;
+var lnbIdx=-1;
+
+toggleOn = false;
+navSlideOn=false;
+$(function(){
+    // 모바일사이즈일때 네비게이션 보이기
+    $(".btn_nav").click(function(){
+    if ( !toggleOn ){
+      $("nav.mobile_depth1").css({"display":"block","width":"180px"});
+      $("nav.mobile_depth1").animate({"margin-right":"0"});
+      $("#wrapper").animate({"margin-right":"180"});
+      $("#wrapper").css({"position":"fixed", "top":"0px", "right":"0px"});
+      navSlideOn=true;
+      toggleOn=true;
+    }else{
+      $("nav.mobile_depth1").css({"display":"none","width":"180px"});
+      $("nav.mobile_depth1").css({"margin-right":"-180px"});
+      $("#wrapper").css({"margin-right":"0"});
+      $("#wrapper").css({"position":"relative"});
+      navSlideOn=false;
+      toggleOn=false;
+    }
+
+
+
+
+  });
+
+  //모바일네비게이션
+
+var isOpen = false;
+var thisText = '';
+var isOpen2 = false;
+var thisText2 = '';
+$("nav.mobile_depth1 ul.depth1 a").click(function(){    
+  var depth2 = $(this).parent().find(".depth2");
+  if($(depth2).length == 0) return;  
+  if(thisText != $(this).text()) isOpen = false; 
+  if(!isOpen){ 
+    $("nav.mobile_depth1 ul.depth1").find(".depth2").hide();
+    $("nav.mobile_depth1 ul.depth2").find(".depth3").hide();
+    $("nav.mobile_depth1 ul.depth1 a").removeClass("cnt");  
+    $(depth2).show();
+    $(this).addClass("cnt");  
+    isOpen = true;
+    thisText = $(this).text();
+  }
+  else{
+    var depth2 = $(this).parent().find(".depth2");
+    $(depth2).hide();
+    $(this).removeClass("cnt");
+    isOpen = false;
+  }
+  
+});
+
+
+$("nav.mobile_depth1 ul.depth2 a").click(function(){   
+  if(thisText2 != $(this).text()) isOpen2 = false;
+  if(!isOpen2){
+    $("nav.mobile_depth1 ul.depth2").find(".depth3").hide();
+    $("nav.mobile_depth1 ul.depth2 a").removeClass("cnt");  
+    var depth3 = $(this).parent().find(".depth3");
+    $(depth3).show();
+    $(this).addClass("cnt");
+    isOpen2 = true;
+    thisText2 = $(this).text();
+  }
+  else{
+    var depth3 = $(this).parent().find(".depth3");
+    $(depth3).hide();
+    $(this).removeClass("cnt");
+    isOpen2 = false;
+  } 
+});
+  
+    $('#sub0').vide({
+      'mp4': '/img/shutterstock_v19401016.mp4',
+    }, {
+    // Options
+    muted: true,
+    loop: true,
+    overlay: true,
+    });
+  
+
+});
+
+      var timer = setInterval(function () {
+      $("#lording").hide();
+      clearInterval(timer);
+      }, 1000);
+</script>
+<script src="/js/vidbg.js"></script>
+
+<script type="text/javascript">
+function scrollLink1(obj){
+  if ( !toggleOn ){
+      $("nav.mobile_depth1").css({"display":"block","width":"180px"});
+      $("nav.mobile_depth1").animate({"margin-right":"0"});
+      $("#wrapper").animate({"margin-right":"180"});
+      $("#wrapper").css({"position":"fixed", "top":"0px", "right":"0px"});
+      navSlideOn=true;
+      toggleOn=true;
+    }else{
+      $("nav.mobile_depth1").css({"display":"none","width":"180px"});
+      $("nav.mobile_depth1").css({"margin-right":"-180px"});
+      $("#wrapper").css({"margin-right":"0"});
+      $("#wrapper").css({"position":"relative"});
+      navSlideOn=false;
+      toggleOn=false;
+    }
+   var position = $("#"+obj).offset();
+  $('html, body').animate({scrollTop : position.top}, 1000);
+
+}
+
+function scrollLink(obj){
+   var position = $("#"+obj).offset();
+  $('html, body').animate({scrollTop : position.top -100}, 1000);
+
+}
+function linkan(val){
+  location.href="index.html?"+val;
+}
+</script>
+
+
+  <script type="text/javascript">
+//레이어 팝업
+function pop_gogo1(){
+   $('#element_to_pop_up1').bPopup();	
+}
+//레이어 팝업
+function pop_gogo2(){
+   $('#element_to_pop_up2').bPopup();	
+}
+
+//레이어 팝업
+function pop_gogo3(){
+   $('#element_to_pop_up3').bPopup();	
+}
+
+//레이어 팝업
+function pop_gogo4(){
+   $('#element_to_pop_up4').bPopup();	
+}
+
+//레이어 팝업
+function pop_gogo5(){
+   $('#element_to_pop_up5').bPopup();	
+}
+
+
+//레이어 팝업
+function pop_gogo6(){
+   $('#element_to_pop_up6').bPopup();	
+}
+
+//레이어 팝업
+function pop_gogo7(){
+   $('#element_to_pop_up8').bPopup();	
+}
+
+//레이어 팝업
+function pop_gogo8(){
+   $('#element_to_pop_up9').bPopup();	
+}
+
+//레이어 팝업
+function pop_gogo9(){
+   $('#element_to_pop_up10').bPopup();	
+}
+
+
+</script>
+
+<div id="element_to_pop_up5" class='pops_up'>
+    <a class="b-close ion-android-close"><a/>
+    이트라의 개인정보취급방침은 다음과 같은 내용을 담고 있습니다. <br><br>
+
+  1.수집하는 개인정보 항목 및 수집방법<br>
+  2.개인정보의 수집 및 이용목적<br>
+  3.수집한 개인정보의 보유 및 이용기간<br>
+  4.수집한 개인정보의 공유 및 제공<br>
+  5.개인정보취급 위탁<br>
+  6.개인정보의 파기절차 및 방법<br>
+  7.이용자 및 법정대리인의 권리와 그 행사방법<br>
+  8.개인정보 자동 수집 장침의 설치.운영 및 그 거부에 관한 사항<br>
+  9.개인정보 관리책임자 및 담당자의 소속-성명 및 연락처<br><br>
+  1. 수집하는 개인정보 항목 및 수집방법<br>
+  1.1. 개인정보 항목<br>
+  이트라는 상담을 위해 아래와 같은 개인정보를 수집하고 있습니다.<br>
+    - 이름, 이메일,  연락처<br>
+    - 서비스 이용기록, 접속 로그, 쿠키, 접속 IP 정보, 이용정지 기록<br>
+  1.2. 수집방법 <br>
+  이트라는 다음과 같은 방법으로 개인정보를 수집합니다.<br>
+     - CONTACT(견적상담)의 이름,연락처,이메일<br><br>
+  2. 개인정보 수집 및 이용목적<br>
+  이트라는 수집한 개인정보를 다음의 목적을 위해 활용합니다.<br>
+  2.1. 서비스 제공에 관한 계약 이행 및 서비스 제공에 따른 요금정산<br>
+     - 콘텐츠 제공<br>
+  2.2. 회원 관리<br>
+     - 회원제 서비스 이용에 따른 본인확인, 개인식별, 불량회원의 부정 이용 방지<br>
+     - 비인가 사용 방지, 가입 의사 확인, 가입 및 가입횟수 제한 <br>
+     - 불만처리 등 민원처리, 고지사항 전달<br>
+  2.3. 마케팅 및 광고에 활용<br>
+    - 신규 서비스(제품) 개발 및 특화, 인구통계학적 특성에 따른 서비스 제공 및 광고게재, <br>
+    - 접속 빈도 파악, 회원의 서비스 이용에 대한 통계, 이벤트 등 광고성 정보 전달<br><br>
+
+  3. 수집한 개인정보의 보유 및 이용기간<br>
+  원칙적으로, 개인정보 수집 및 이용목적이 달성된 후 해당 정보를 지체 없이 파기합니다. <br>
+  단, 다음의 정보에 대해서는 아래의 이유로 명시한 기간 동안 보존합니다.<br>
+  <내부 방침에 의한 정보보유 사유><br><br>
+  ▶ 탈퇴회원 ID<br>
+    - 보존 이유 : 서비스 이용의 혼선방지<br>
+    - 보존 기간 : 5년<br>
+
+  4. 개인정보의 공유 및 제공<br>
+  이트라는 이용자의 개인정보를 원칙적으로 외부에 제공하지 않습니다. 다만, 아래의 경우에는 예외로 합니다.<br>
+  - 이용자들이 사전에 동의한 경우<br>
+  - 법령의 규정에 의거하거나, 수사 목적으로 법령에 정해진 절차와 방법에 따라 수사기관의 요구가 있는 경우 <br><br>
+
+  5. 수집한 개인정보 취급 위탁<br>
+  이트라는 고객님의 동의없이 고객님의 개인정보 취급을 외부 업체에 위탁하지 않습니다.<br>
+  향후 그러한 필요가 생길 경우, 위탁 대상자와 위탁 업무 내용에 대해 고객님에게 통지하고 필요한 경우 사전 동의를 받도록 하겠습니다.<br><br>
+
+  6. 개인정보 파기절차 및 방법<br>
+  이트라는 원칙적으로 개인정보 수집 및 이용목적이 달성된 후에는 해당 정보를 지체 없이 파기합니다. <br>
+  파기절차 및 방법은 다음과 같습니다.<br>
+  6.1. 파기절차<br>
+  - 회원님이 상담을 위해 입력하신 정보는 목적이 달성된 후 내부 방침 및기타 관련 법령에 의한 정보보호 사유에 따라(보유 및 이용기간 참조) 일정 기간저장된 후 파기되어집니다.<br>
+  동 개인정보는 법률에 의한 경우가 아니고서는 보유되어지는 이외의 다른 목적으로 이용되지 않습니다.<br>
+  6.2. 파기방법<br>
+  - 종이에 출력된 개인정보는 분쇄기로 분쇄하거나 소각을 통하여 파기하고<br>
+  - 전자적 파일형태로 저장된 개인정보는 기록을 재생할 수 없는 기술적 방법을<br>
+  사용하여 삭제합니다.<br><br>
+
+
+  7. 이용자 및 법정 대리인의 권리와 그 행사방법<br>
+  이용자는 언제든지 등록되어 있는 자신의 개인정보를 조회하거나 수정할 수 있으며 가입해지를 요청할 수도 있습니다.<br>
+  이용자들의 개인정보 조회.수정을 위해서는 ‘개인정보변경’(또는 ‘회원정보수정등)을 가입해지(동의철회)를 위해서는 <br>
+  “회원탈퇴”를 클릭하여 본인 확인 절차를 거치신 후 직접 열람, 정정 또는 탈퇴가 가능합니다.<br>
+  혹은 개인정보관리책임자에게 서면, 전화 또는 이메일로 연락하시면 지체 없이 조치하겠습니다.<br>
+  귀하가 개인정보의 오류에 대한 정정을 요청하신 경우에는 정정을 완료하기 전까지 당해 개인정보를 이용 또는 제공하지 않습니다. <br>
+  또한 잘못된 개인정보를 제3자에게 이미 제공한 경우에는 정정 처리결과를 제3자에게 지체 없이 통지하여 정정이 이루어지도록 하겠습니다.<br>
+  이트라는 이용자의 요청에 의해 해지 또는 삭제된 개인정보는 “이트라가 수집하는 개인정보의 보유 및 이용기간”에 <br>
+  명시된 바에 따라 처리하고 그 외의 용도로 열람 또는 이용할 수 없도록 처리하고 있습니다.<br><br>
+
+
+  8. 개인정보의 자동 수집 장치의 설치.운영 및 그 거부에 관한 사항<br>
+  이트라는 귀하의 정보를 수시로 저장하고 찾아내는 ‘쿠키(cookie)’개인정보를 자동으로 수집하는 장치를 설치.운용합니다. <br><br>
+  쿠키란 www.lasikpia.co.kr 웹사이트를 운영하는데 이용되는 서버가 귀하의 브라우저에 보내는 아주 작은 텍스트 파일로서 <br>
+  귀하의 컴퓨터 하드디스크에 저장됩니다.<br>
+  병원은 다음과 같은 목적을 위해 쿠키 등을 사용합니다.<br>
+  ▶ 쿠키 등 사용 목적<br>
+  - 회원과 비회원의 접속 빈도나 방문 시간 등을 분석, 이용자의 취향과 관심분야<br>
+  를 파악 및 자취 추적, 각종 이벤트 참여 정도 및 방문 회수 파악 등을 통한 타겟 마케팅 및 개인 맞춤 서비스 제공<br>
+  귀하는 쿠키 설치에 대한 선택권을 가지고 있습니다. 따라서, 귀하는 웹브라우저에서 옵션을 설정함으로써 <br>
+  모든 쿠키를 허용하거나, 쿠키가 저장될 때마다 확인을 거치거나, 아니면 모든 쿠키의 저장을 거부할 수도 있습니다. <br>
+  ▶ 쿠키 설정 거부 방법<br>
+  예: 쿠키 설정을 거부하는 방법으로는 회원님이 사용하시는 웹 브라우저의 옵션을 선택함으로써 모든 쿠키를 허용하거나 <br>
+  쿠키를 저장할 때마다 확인을 거치거나, 모든 쿠키의 저장을 거부할 수 있습니다.<br>
+  설정방법 예(인터넷 익스플로어의 경우)<br>
+  : 웹 브라우저 상단의 도구 > 인터넷 옵션 > 개인정보<br>
+  단, 귀하께서 쿠키 설치를 거부하였을 경우 서비스 제공에 어려움이 있을 수 있습니다.<br><br>
+
+  9. 개인정보 관리 책임자<br>
+  이트라는 고객의 개인정보를 보호하고 개인정보와 관련한 불만을 처리하기 위하여 아래와 같이 개인정보관리책임자를 <br>
+  지정하고 있습니다.<br>
+  9.1. 개인정보관리책임자<br>
+  성명 : 유영근<br>
+  전화번호 : 070-7542-4785<br>
+  이메일 : etrasys@naver.com<br><br>
+
+  귀하께서는 이트라의 서비스를 이용하시며 발생하는 모든 개인정보보호 관련 민원을<br>
+  개인정보관리책임자 혹은 담당부서로 신고하실 수 있습니다. 회사는 이용자들의<br>
+  신고사항에 대해 신속하게 충분한 답변을 드릴 것입니다.<br>
+
+  공고일자 : 2016년 07월 11일<br>
+  공고일자 : 2016년 07월 11일<br>
+</div>
+
+
+
+
+
+<div id="wrapper">
+
+
+  <!-- 상단 -->
+
+  <div id="sub0">
+  <header class="header_main">
+  <div class="bg_op"></div>
+    <div class="main_header">
+    <div class="main_text1"><div class=""><img src="./img/main_text.png"></div></div>
+    </div>
+  </header>
+  </div>
+  
+  <!-- 중단 -->
+
+  <article class="subarticle2" style="padding-top:0;">
+    <div class="contents_box">
+    <div class="artcletitle title1">02</div>
+      <div>
+      <h2>멀티 월렛 <span>비첵</span></h2>
+      <h3>Multi Wallet Bcheck</h3>
+    </div>
+
+
+
+
+      <div class="">
+        <div class="contents01_layout">
+          <div class="bcheck_p_img2"><img src="./img/bchk_cap4.png"></div>
+
+        <div class="substyle_layout2_1">
+
+          <div class="substyle2">
+          <img src="./img/bcheck_appimg2.png">
+          <div class="bcheck_title">단일코인 전용월렛은 기본</div>
+          <div class="bcheck_subtitle">하나의 앱으로 여러 코인을</div>
+          <div class="bcheck_contents_text">블럭체인 기술이 사용자와 만나는 곳은 결국 월렛 <br /><br />
+          비트코인,라이트코인을 비롯한 다양한 코인을<br />
+          한 곳에서 관리할 수 있는 멀티 월렛 비첵의 사용자들은<br />
+          그 편리함에 빠져듭니다. <br />
+           </div>
+          </div>
+
+
+        </div>
+
+        </div>
+      </div>
+  </article>
+  <article class="subarticle2">
+    <div class="contents_box">
+
+
+
+    <div class="bcheck_pointbox">
+
+      <div class="blockchain_benefit">
+        <div class="blockchain_benefit2">
+        <img src="./img/block_icon1.png">
+        <div class="bc_benefit_text1">보안의 안전성</div>
+        </div>
+        <div class="blockchain_benefit2">
+        <img src="./img/block_icon2.png">
+        <div class="bc_benefit_text1">사용의 편리성</div>
+        </div>
+        <div class="blockchain_benefit2">
+        <img src="./img/block_icon3.png">
+        <div class="bc_benefit_text1">서비스의 확장성</div>
+        </div>
+      
+      </div>
+
+
+    </div>
+
+
+
+      <div class="">
+        <div class="contents01_layout">
+          <div class="bcheck_p_img"><img src="./img/bchk_cap3.png"></div>
+
+        <div class="substyle_layout2">
+
+          <div class="substyle2">
+
+
+          <div class="bcheck_title">BIP39 방식 채택 </div>
+          <div class="bcheck_subtitle">이중 잠금기능 제공</div>
+          <div class="bcheck_contents_text">거래소와 같이 아이디와 패스워드를 중앙 서버에 보관하는 방식은 언제든 해킹에 노출될 수 있습니다. <br />하드웨어 월렛에서 사용하는 BIP39 방식에 앱에서 한번 더 암호화 가능한 이중 잠금으로 보안 수준을 높였습니다.</div>
+          
+          <div class="bcheck_title">한글 mnemonic </div>
+          <div class="bcheck_subtitle">암호화 단어 한글지원</div>
+          <div class="bcheck_contents_text">영어 단어에 비해 익숙하고 가독성이 좋은 한글 mnemonic을 <br />제공하고,12개의 mnemonic만 있으면 디바이스에 관계없이 복구하여 사용이 가능합니다.</div>
+
+          
+          <div class="bcheck_title">기존 비지니스 결합</div>
+          <div class="bcheck_subtitle">하이브리드 월렛</div>
+          <div class="bcheck_contents_text">순수 블럭체인 기반의 코인 지갑기능에 DB 기반의 기존 비즈니스 기능을 결합한, 하이브리드 월렛으로의 확장 가능성은 무한합니다. </div>
+          
+          </div>
+
+
+        </div>
+
+        </div>
+      </div>
+  </article>
+
+
+
+  <section class="blockchain4_bg">
+    <div class="blockchain4_box">
+    <div class="blockchain4_text">
+    DOWNLOAD THE WALLET <span>Bcheck</span>
+    </div>
+    <div class="blockchain4_text2">Smart Mobile Wallet Multi Bcheck</div>
+    <div class="bchk_icon2">
+    <a href="https://itunes.apple.com/kr/app/bcheck-wallet/id1314332995?mt=8" target="_blank"><img src="./img/bcheck_icon1.png"></a>
+    <a href="https://play.google.com/store/apps/details?id=com.bitchk.bitchk" target="_blank"><img src="./img/bcheck_icon2.png"></a>
+    </div>
+    <div class="manual_layout">
+    <a href="/img/ios_wallet_manual_Kr.pdf" target="_blank"><div class="manual_bt2"><img src="./img/manual_down_icon.png">IOS Manual</div></a>
+    <a href="/img/ios_wallet_manual_Kr.pdf" target="_blank"><div class="manual_bt"><img src="./img/manual_down_icon.png">Android Manual</div></a>
+    </div>
+    </div>
+
+  </section>
+
+
+
+
+
+  
+  <!-- 하단 -->
+  <footer class="footer">
+    <div class="footer_box">
+  
+      <div class="footer_text"><a href="javascript:pop_gogo5()"><span class="notice"  style='font-weight: bold;'></span></a>  &nbsp;&nbsp;&nbsp; 대표 : <span style='font-weight: bold;'>유영근</span> &nbsp;&nbsp;&nbsp; 사업자등록번호 : 220-88-94283</p>
+      </div>
+
+    </div>
+
+  
+  </footer>
+
+</div>
+
+  </body>
+</html>
+
+      
+      

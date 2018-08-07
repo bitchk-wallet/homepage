@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+article#contact_top1{position:relative;  top:0; left:0; margin-top:70px; width:100%; height:600px;  background:rgba(0,0,0,0.4)url('../images/test.png');  }
+article#contact_top1 div#lording{position:absolute; top:0; left:0; width:100%; height:600px;  background:rgba(0,0,10,0.6) url('../images/work/contact_video_background.png');  background-size: cover;  text-align:center; vertical-align:middle;}
+article#contact_top1 div#lording img{padding-top: 280px;}
+article#contact_top1 div#top1_bk{margin:auto; width:1170px;}
+article#contact_top1 div#top1_cont{ width:100%; font-size:36px; color:#ffffff; padding-top:180px;}
+article#contact_top1 div#top1_cont p{font-size:18px; padding-top:25px; line-height:28px;}
+article#contact_top1 div#top1_btn{width:100%;  padding-top:50px;}
+
+article#contact_top2{width:1170px; margin:auto;  padding-top:80px; position:relative;}
+article#contact_top2 #top2_tites{width:570px; height:270px; border:1px solid #D2D2D2; text-align:center; display:table-cell; vertical-align:middle;}
+article#contact_top2 #top2_tites img{width:233px;}
+article#contact_top2 #top2_conts{ position:absolute; top:80px; right:0; width:570px; }
+article#contact_top2 #top2_conts #top2_txt1{font-size:24px; font-weight:bold; padding:30px 0 0 0;}
+article#contact_top2 #top2_conts #top2_txt2{font-size:18px; font-weight:bold;  padding:0px 0 25px 0;}
+article#contact_top2 #top2_conts #top2_txt3 table.top2_table{width:100%;}
+article#contact_top2 #top2_conts #top2_txt3 table.top2_table th{text-align:left;  font-size:14px; color:#7C7C7C; width:15%; vertical-align:top; line-height:28px;}
+article#contact_top2 #top2_conts #top2_txt3 table.top2_table td{text-align:left;  font-size:18px; vertical-align:top; line-height:25px;}
+
+article#contact_top3{width:1170px; margin:auto;  padding-top:40px; padding-bottom:80px; position:relative;}
+article#contact_top3 #map_view{width:100%; height:435px;}
+
+article#contact_top4{width:100%; margin:auto; height:348px;  border-top:1px solid #E5E5E5;  border-bottom:1px solid #E5E5E5;}
+article#contact_top4 div#top4_cont{position:relative; width:1170px; margin:auto;}
+article#contact_top4 div#top4_cont ul li{width:270px; float:left; height:348px; text-align:center;}
+article#contact_top4 div#top4_cont ul li.contact_top4_ic1{background:url("../images/contact/workware_icon.png") no-repeat center 15px; background-size:150px; }
+article#contact_top4 div#top4_cont ul li.contact_top4_ic2{background:url("../images/contact/program_icon.png") no-repeat center 15px; background-size:150px; }
+article#contact_top4 div#top4_cont ul li.contact_top4_ic3{background:url("../images/contact/webapp_icon.png") no-repeat center 15px; background-size:150px; }
+article#contact_top4 div#top4_cont ul li.contact_top4_ic4{background:url("../images/contact/design_icon.png") no-repeat center 15px; background-size:150px; }
+article#contact_top4 div#top4_cont ul li .top4_conttitle1{padding-top:165px; font-size:18px; font-weight:bold; }
+article#contact_top4 div#top4_cont ul li .top4_conttitle2{padding-top:25px; font-size:18px;}
+article#contact_top4 div#top4_cont ul li .top4_conttitle3{padding-top:8px; font-size:18px;}
+article#contact_top4 div#top4_cont ul li .top4_conttitle4{padding-top:8px; font-size:18px;}
+article#contact_top4 div#top4_cont ul li.lefts{margin-left:30px;}
+
+article#contact_top5{position:relative;  top:0; left:0; margin:auto;  width:100%; height:680px; background:url("../images/landing_contact_background.png") no-repeat;background-size: cover;  background-position: top;}
+article#contact_top5 div#contact_top5_lay{position:relative;  top:70px; left:0; margin:auto; width:570px; height:550px; background:url("../images/contact_icon.png") no-repeat center 40px; background-size: 40px;  background-color:#EEEEEE;}
+article#contact_top5 div#contact_top5_lay div#contact_top5_title{text-align:center;font-size:24px; padding-top:82px; font-weight:bold;}
+article#contact_top5 div#contact_top5_lay div#contact_top5_cont{position:relative;  top:30px; left:0; margin:auto;  width:490px;}
+article#contact_top5 div#contact_top5_lay div#contact_top5_cont li{height:55px;}
+.input_box{ background-color:#ffffff; padding:4px 10px; -moz-border-radius: 5px; -webkit-border-radius: 5px; -khtml-border-radius: 5px; border-radius: 5px; line-height:35px;}
+.lbl_in{display:none;}
+.int{ width:100%; height:30px; }
+.inttx{width:100%; height:30px; height:180px; overflow-y:hidden;}
+article#contact_top5 div#contact_top5_lay div#contact_top5_btn{position:relative;  top:200px; left:0; margin:auto;  width:490px; text-align:center;}

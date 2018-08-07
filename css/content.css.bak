@@ -1,0 +1,28 @@
+/*콘텐츠CSS*/
+/* dl.dl_base dt { background-image: url("../images/layout/blt_blue.png"); background-repeat:no-repeat; 
+padding:0em 0em 0em 1.6em; font-size:1.2em;  font-family:Nanum Gothic;  font-weight:bold; clear:both;}
+
+*/
+dl.dl_base dl{padding-top:2em; }
+dl.dl_base dt { background-image: url("../images/layout/blt_new.jpg"); background-repeat:no-repeat; 
+    padding:0em 0em 0em 1.6em; font-size:1.6em; font-weight:bold; clear:both;}
+dd.dd_title { font-size:1.1em;  color:#2089ff; padding:1.0em 0em 1.0em 0em; clear:both; }
+.dd_title_noclear { font-size:1.1em; color:#2089ff; padding:1.0em 0em 1.0em 0em; }
+dd.dd_title_nopad { font-size:1.1em; color:#2089ff; padding:0em 0em 0em 0em; clear:both;font-weight:bold; }
+
+dd.dd_left_img_greeting img { padding:0em 1.6em 1.6em 0em; float:left; }
+dd.dd_left_img img { padding:0em 1.6em 1em 0em; float:left; }
+dd.dd_center_img { text-align:center; }
+dd.dd_right_img img {}
+
+dl.dl_gallery dd.dd_base { padding:1.6em 4em 0em 0em; font-size:1.2em;    font-weight:bold; float:left;text-align:center; }
+dl.dl_gallery dd.dd_last { padding:1.6em 11em 0em 0em; font-size:1.2em;  font-weight:bold; text-align:center; }
+
+dl.dl_gallery dd.dd_nopad { padding:1.6em 0em 0em 0em; font-size:1em;   font-weight:bold; float:left;text-align:center; }
+dl.dl_gallery dd.dd_cert { padding:1.6em 2.5em 0em 0em; font-size:1em;   font-weight:bold; float:left;text-align:center; }
+dl.dl_gallery dd.dd_cert2 { padding:1.6em 4em 0em 0em; font-size:1em;    font-weight:bold; float:left;text-align:center; }
+
+.float_clear { clear:both; } 
+.point_text { font-size:1.0em; color:#8b1c34; font-weight:bold;}
+.point_text2 { color:#a94489;}
+.text_list { padding:0em 0em 1em 1.6em; }

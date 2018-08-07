@@ -1,0 +1,51 @@
+/* 목록 */
+div.div_seek { text-align:center; }
+table.frontList { width:100%; margin-top:1em; letter-spacing:-0.08em;; }
+table.frontList th { background-color:#2bb6ca; color:white; font-weight:bold; padding:0.3em; font-size:0.95em; }
+table.frontList td { border-bottom:1px dotted #2bb6ca; padding:0.1em; }
+a.viewLink { color:black; }
+a.viewLink:hover { text-decoration:underline;  }
+
+/* 보기 */
+table.frontAdvm { width:100%; margin-top:1em; letter-spacing:-1px; border-top:solid 2px #2bb6ca;}
+table.frontAdvm th { border-bottom:1px dotted #2bb6ca;  padding:0.1em; background-color:#d8f6fa; width:15%; }
+table.frontAdvm td { border-bottom:1px dotted #2bb6ca;  padding:0.3em 0.5em;}
+
+table.frontAdvm2 { width:100%; margin-top:1em; letter-spacing:-1px; border-top:solid 2px #336699;}
+table.frontAdvm2 th { border-bottom:1px dotted #2bb6ca;  padding:0.1em; background-color:#d8f6fa; width:15%; }
+table.frontAdvm2 td { border-bottom:1px dotted #2bb6ca;  padding:0.3em 0.5em;}
+
+dl.frontAdvmDl { border:1px solid #8b1c34;  }
+dl.frontAdvmDl dt { width:15%;  border-bottom:1px solid #8b1c34; background-color:#fde1e7; float:left; }
+dl.frontAdvmDl dt { clear:left; }
+
+/* 페이징 */
+table.tableBlank { width:100%; margin-top:1em; }
+span.echoPage {font-size:0.8em; color:gray; }
+span.pageLink { border:1px solid #BBBBBB; padding:0.1em 0.35em; font-size:1.1em; font-weight:bold; color:gray;}
+span.pageLink:hover { color:#8b1c34; }
+span.thisPage { background-color:#2bb6ca; color:white; }
+
+/* 약관 */
+div.agree_content { overflow-y: scroll; border:1px solid #BBBBBB; margin-top:0.5em; height:10em; padding:1em; line-height:1.3em; 
+background-color:#fcfdec; }
+p.agree_check { margin:0.5em 0em 2em 0em; color:#1a65ba; }
+
+/* 파일 */
+.buttonInner {font-size:0.95em; padding:0.1em; cursor:pointer;  margin-left:0.5em; }
+.red3 { color:red; }
+
+/* 우측배너 */ 
+#main_r_banner_wrap{ position:relative;  width:260px; height:200px; }
+#main_r_banner { position:absolute; width:1000px; height:192px; font-size:1.1em; font-weight:bold; color:gray;text-align:center;}
+#img_show {position:absolute;left:0px;opacity:1;float:left;}
+#img_hidden {position:absolute;left:260px;opacity:0;}
+
+/* 버튼div */
+div.div_btn_bottom { text-align:center; margin-top:1em; }
+
+/* 검색시 표현 글자 */
+.textSeek{color:#FF6600; font-weight:bold;} 
+
+/* 답변 글자 */
+.color_reply { color:#8b1c34; }

@@ -1,0 +1,58 @@
+/*바로가기*/
+.skip{
+	position:absolute; 
+	width:0;
+	height:0;
+	line-height:0;
+	font-size:0;
+	text-indent:-999999%;
+	overflow:hidden;
+	visibility:hidden;
+}
+/*초기화*/
+*{margin:0px; padding:0px; border:0px;}	
+ol, ul, li { list-style:none; }
+body{font-family:NotoSans-Regular,sans-serif; font-size:12px;}
+a { text-decoration:none; }
+
+textarea{font-family:NotoSans-Regular,sans-serif; }
+
+/*버튼 스타일*/
+a.btns{
+	border:1px solid #ffffff;
+	color:#ffffff;
+	padding:10px 30px;
+	font-weight:bold;
+}
+a.btns:hover{
+	color:#b0b0b0;
+}
+
+a.btns1{
+	border:1px solid #000000;
+	color:#000000;
+	padding:10px 30px;
+	font-weight:bold;
+}
+a.btns1:hover{
+	color:#b0b0b0;
+}
+
+header{}
+header #header{}
+
+nav{position:absolute; top:24px; right:0; font-size:12px;}
+nav li{float:left; width:80px; padding-right:30px; border:0px solid red;}
+
+footer{ position:relative; width:100%; height:208px; background-color:#1E1E1E;}
+footer #footer{margin:auto;width:1170px; color:#ffffff; position:relative; font-size:16px;}
+
+
+footer #footer #footer1{position:absolute; top:30px; right:320px; width:180px;}
+footer #footer #footer2{position:absolute; top:30px; right:120px; width:180px;}
+footer #footer #footer3{position:absolute; top:60px; right:320px; width:180px;}
+footer #footer #footer4{position:absolute; top:60px; right:120px; width:180px;}
+footer #footer #footer5{position:absolute; top:80px; right:120px; width:180px;}
+footer #footer #footer6{position:absolute; top:110px; right:320px; width:180px;}
+footer #footer #footer7{position:absolute; top:140px; right:220px; width:280px;}
+
